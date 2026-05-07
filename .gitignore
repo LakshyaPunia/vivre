@@ -1,0 +1,39 @@
+# Environment
+.env
+*.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+env/
+
+# Large dataset files (too big for GitHub)
+elderly_healthcare_digital_twin_dataset.csv
+elderly_healthcare_digital_twin_dataset_augmented.csv
+
+# ML model binaries (large — use Git LFS or store separately)
+models/*.pkl
+
+# Logs
+*.log
+server.log
+server_err.log
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
