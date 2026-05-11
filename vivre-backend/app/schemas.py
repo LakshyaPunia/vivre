@@ -57,7 +57,7 @@ class IngestResponse(BaseModel):
 
 
 class ChatRequest(BaseModel):
-    patient_id: str
+    patient_id: Optional[str] = ""
     message: str
     conversation_history: Optional[list[dict]] = []
 
