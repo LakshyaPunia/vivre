@@ -7,7 +7,7 @@ class Settings(BaseSettings):
     supabase_url: str = ""
     supabase_service_key: str = ""
     openai_api_key: str = ""
-    models_dir: str = "../models"
+    models_dir: str = "models"
     app_env: str = "development"
     cors_origins: str = "http://localhost:3000"
 

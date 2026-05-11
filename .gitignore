@@ -21,8 +21,12 @@ env/
 elderly_healthcare_digital_twin_dataset.csv
 elderly_healthcare_digital_twin_dataset_augmented.csv
 
-# ML model binaries (large — use Git LFS or store separately)
+# ML model binaries at root (local dev only)
 models/*.pkl
+
+# vivre-backend models are committed for Railway deployment
+!vivre-backend/models/*.pkl
+!vivre-backend/models/*.json
 
 # Logs
 *.log

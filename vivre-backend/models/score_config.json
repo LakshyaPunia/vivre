@@ -1,0 +1,54 @@
+{
+  "thresholds": {
+    "heart_rate": {
+      "critical_low": 50,
+      "critical_high": 130,
+      "warn_low": 60,
+      "warn_high": 110
+    },
+    "spo2": {
+      "critical": 90,
+      "warn": 95
+    },
+    "systolic_bp": {
+      "critical_high": 180,
+      "critical_low": 90,
+      "warn_high": 140,
+      "warn_low": 100
+    },
+    "temperature": {
+      "critical_high": 38.5,
+      "critical_low": 35.5,
+      "warn_high": 37.8,
+      "warn_low": 36.0
+    },
+    "glucose": {
+      "critical_high": 250,
+      "critical_low": 60,
+      "warn_high": 180,
+      "warn_low": 80
+    }
+  },
+  "score_bands": {
+    "excellent": [
+      90,
+      100
+    ],
+    "good": [
+      75,
+      90
+    ],
+    "fair": [
+      60,
+      75
+    ],
+    "poor": [
+      40,
+      60
+    ],
+    "critical": [
+      0,
+      40
+    ]
+  }
+}
