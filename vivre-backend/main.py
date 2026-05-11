@@ -88,8 +88,8 @@ async def lifespan(app: FastAPI):
     print("[OK] ML models loaded")
     print(f"[OK] Supabase: {'connected' if settings.supabase_enabled else 'not configured (in-memory mode)'}")
     print(f"[OK] Chatbot:  {'enabled' if settings.chatbot_enabled else 'disabled (set OPENAI_API_KEY)'}")
-    task = asyncio.create_task(_simulator_loop(interval=30))
-    print("[OK] Background simulator started (30s interval)")
+    task = asyncio.create_task(_simulator_loop(interval=10))
+    print("[OK] Background simulator started (10s interval)")
     yield
     task.cancel()
 
